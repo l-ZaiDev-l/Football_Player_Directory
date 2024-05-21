@@ -24,6 +24,7 @@ public class Player {
     private Long id;
     private String first_name;
     private String last_name;
+    private int tshirtNumber;
     @CreationTimestamp
     private LocalDate dob;
     private String nationality;
@@ -42,4 +43,8 @@ public class Player {
     /* relation avec Awards */
     @OneToMany(mappedBy = "player")
     private List<Awards> awards;
+
+    /* relation avec stats */
+    @OneToOne(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Stats stats;
 }

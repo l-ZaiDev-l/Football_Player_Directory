@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @Builder
 /****** JPA ******/
 @Entity
-@Table(name = "clubs")
+@Table(name = "blogs")
 
 public class Blogs {
     @Id
@@ -25,5 +25,6 @@ public class Blogs {
     private String photoUrl;
     private String title;
     private LocalDate creation_date;
+    private String content;
 
 }
