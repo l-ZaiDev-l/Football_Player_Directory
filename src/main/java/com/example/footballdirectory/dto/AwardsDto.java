@@ -13,6 +13,7 @@ public class AwardsDto {
 
     private Long id;
     private String reward;
+    private String photoUrl;
     private LocalDate year;
     private Player player;
 

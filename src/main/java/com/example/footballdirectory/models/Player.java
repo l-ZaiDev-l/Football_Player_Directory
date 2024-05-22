@@ -24,7 +24,8 @@ public class Player {
     private Long id;
     private String first_name;
     private String last_name;
-    private int tshirtNumber;
+    private String photoUrl;
+    private int shirt_number;
     @CreationTimestamp
     private LocalDate dob;
     private String nationality;

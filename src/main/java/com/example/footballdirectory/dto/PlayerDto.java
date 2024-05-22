@@ -19,7 +19,8 @@ public class PlayerDto {
     private Long id;
     private String first_name;
     private String last_name;
-    private int tshirtNumber;
+    private String photoUrl;
+    private int shirt_number;
     private LocalDate dob;
     private String nationality;
     private String dominant_foot;

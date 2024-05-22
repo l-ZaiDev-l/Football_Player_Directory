@@ -20,5 +20,6 @@ public class TeamDto {
     private String country;
     private LocalDate year_of_foundation;
     private String stadium;
+    private String photoUrl;
     private List<Player> players;
 }

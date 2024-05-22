@@ -11,13 +11,14 @@ public class PlayerMapper {
                 .id(playerDto.getId())
                 .first_name(playerDto.getFirst_name())
                 .last_name(playerDto.getLast_name())
-                .tshirtNumber(playerDto.getTshirtNumber())
+                .shirt_number(playerDto.getShirt_number())
                 .dob(playerDto.getDob())
                 .nationality(playerDto.getNationality())
                 .dominant_foot(playerDto.getDominant_foot())
+                .photoUrl(playerDto.getPhotoUrl()) // Add this line
                 .position(playerDto.getPosition())
                 .team(playerDto.getTeam())
-                .awards(playerDto.getAwards()) /**/
+                .awards(playerDto.getAwards())
                 .stats(playerDto.getStats())
                 .build();
         return player;
@@ -28,10 +29,11 @@ public class PlayerMapper {
                 .id(player.getId())
                 .first_name(player.getFirst_name())
                 .last_name(player.getLast_name())
-                .tshirtNumber(player.getTshirtNumber())
+                .shirt_number(player.getShirt_number())
                 .dob(player.getDob())
                 .nationality(player.getNationality())
                 .dominant_foot(player.getDominant_foot())
+                .photoUrl(player.getPhotoUrl()) // Add this line
                 .position(player.getPosition())
                 .team(player.getTeam())
                 .awards(player.getAwards())
@@ -40,4 +42,5 @@ public class PlayerMapper {
         return playerDto;
     }
 }
+
 

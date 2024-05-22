@@ -23,8 +23,9 @@ public class Awards {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String reward;
+    private String photoUrl;
     @CreationTimestamp
-    private LocalDate year;
+    private LocalDate awardsDate;
 
     /* player id */
     @ManyToOne

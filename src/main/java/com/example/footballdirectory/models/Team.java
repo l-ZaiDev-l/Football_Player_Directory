@@ -25,6 +25,7 @@ public class Team {
     private Long id;
     private String name;
     private String country;
+    private String photoUrl;
     @CreationTimestamp
     private LocalDate year_of_foundation;
     private String stadium;
