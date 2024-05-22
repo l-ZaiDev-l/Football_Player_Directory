@@ -24,8 +24,11 @@ public class PlayerDto {
     private String nationality;
     private String dominant_foot;
     private Position position;
+    /**/
     private Team team;
+    /**/
     private List<Awards> awards;
+    /**/
     private Stats stats;
 
 
