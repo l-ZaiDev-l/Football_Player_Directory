@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
 
 <head>
   <title>Soccer &mdash; Website by Colorlib</title>
@@ -7,34 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
-
-
-
 </head>
 
 <body>
 
-  <div class="site-wrap">
+
+  <section layout:fragment="body" class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -46,8 +25,7 @@
     </div>
 
 
-    <header  th:insert="fragments :: navbar" >
-    </header>
+
 
     <div class="hero overlay" style="background-image: url('images/hero_bg_players.jpg');">
       <div class="container">
@@ -70,21 +48,35 @@
       <div  class="row">
         <div th:each="player :${players}" class="col-lg-4 mb-4">
           <div class="custom-media d-block">
-            <div class="img mb-4">
+            <div class="img img-container mb-4">
               <a href="single.html">
-                <img th:src="${player.photoUrl}" alt=""/>
+                <img th:src="${player.photoUrl}" alt="" class="player-photo"/>
               </a>
-              <img src="" alt=""/>
-              <p th:text="${player.photoUrl}"></p>
             </div>
             <div class="text">
               <h3 class="mb-2"><a href="#" th:text="${player.first_name+' '+player.last_name}"></a></h3>
               <p class="mb-2">Player Of <span th:text="${player.team.name}"></span></p>
-              <p><a href="#">Read more</a></p>
+              <p><a th:href="@{/players/{playerId}(playerId=${player.id})}">Read more</a></p>
             </div>
           </div>
         </div>
       </div>
+      <style>
+        .img-container {
+          width: 100%; /* Adjust width as necessary */
+          height: 430px; /* Set a fixed height for the images */
+          overflow: hidden; /* Hide overflow to ensure images fit within the container */
+          position: relative;
+        }
+
+        .player-photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the entire container */
+          object-position: top; /* Keeps the top part of the image visible */
+        }
+
+      </style>
 
       <div class="row justify-content-center">
         <div class="col-lg-7 text-center">
@@ -99,34 +91,7 @@
       </div>
     </div>
 
-
-
-
-    <footer th:insert="fragments :: footer">
-    </footer>
-
-
-
-  </div>
-  <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.mb.YTPlayer.min.js"></script>
-
-
-  <script src="js/main.js"></script>
+  </section>
 
 </body>
 
