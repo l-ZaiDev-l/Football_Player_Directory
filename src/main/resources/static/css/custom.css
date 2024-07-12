@@ -1,0 +1,304 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  background-size: 100% auto;
+  color: rgba(255,255,255,0.35);
+  background-color: var(--app-bg-color);
+}
+
+:root
+{
+  --app-bg-color: #010103;
+  --app-primary-text-color: #010101;
+  --app-secondary-text-color: #737373;
+}
+
+#flag_app
+{
+  padding-top: 20px;
+  padding-bottom: 65px;
+}
+
+#fa_header i.fa
+{
+  font-size: 15px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+}
+
+#fa_header i.fa-angle-left
+{
+  font-size: 20px;
+}
+
+#fa_header i.fa:first-child
+{
+  margin-right: 15px;
+}
+
+#fa_header i.fa.rm
+{
+  border: 2.5px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%; 
+}
+
+/**/
+#fa_body
+{
+  margin-top: 10px;
+}
+
+#fa_body #fa_flag
+{
+  height: 420px;
+  background-image: url('../imgs/ronaldo.png');
+  background-repeat: no-repeat;
+  background-position: 88% top;
+  background-size: 250px auto;
+
+  box-shadow: inset 0 -150px 70px -80px #010103;
+}
+
+.fa_team_flags
+{
+  margin-top: 20px;
+}
+
+.fa_team_flags ul li
+{
+  position: relative;
+  list-style: none;
+  float: left;
+  margin-right: -15px;
+}
+
+.fa_team_flags ul li img
+{
+  width: 55px;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: var(--app-bg-color);
+}
+
+.fa_team_flags ul li:last-child
+{
+  z-index: -1;
+}
+
+.fa_player_name
+{
+  margin-top: 90px;
+  margin-left: 5px;
+  font-size: 45px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/**/
+
+#fa_body_2
+{
+  position: relative;
+  margin-top: -120px;
+}
+
+.fa_shirt
+{
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.fa_shirt img
+{
+  width: 40px;
+}
+
+.fa_tile
+{
+  width: 33.33%;
+  display: inline-block;
+}
+
+.fa_tile > div 
+{
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(40px);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.09);
+  box-shadow: inset -15px 0 20px rgba(0, 0, 0, 0.15)
+}
+
+.fa_tile span.fa_tile_title
+{
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fa_tile span.fa_tile_data
+{
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.fa_tile:first-child
+{
+  padding-right: 3%;
+}
+
+.fa_tile:last-child
+{
+  padding-left: 3%;
+}
+
+.fa_tile:nth-child(2)
+{
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+/**/
+
+#fa_body_3
+{
+  margin-top: 25px;
+}
+
+#fa_users li
+{
+  list-style: none;
+  float: left;
+}
+
+#fa_users li:not(:last-child)
+{
+  margin-right: -20px;
+}
+
+#fa_users li img
+{
+  width: 40px;
+  height: 40px;
+  border: 5px solid var(--app-bg-color);
+  border-radius: 100%;
+}
+
+.fa_b3_title
+{
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fa_b3_title i.fa
+{
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.fa_b3_title span
+{
+  position: relative;
+  top: -6px;
+}
+
+/**/
+
+#fa_pt li
+{
+  list-style: none;
+  float: left;
+}
+
+#fa_pt li:not(:last-child)
+{
+  margin-right: -15px;
+}
+
+#fa_footer img
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--app-bg-color);
+}
+
+.fa_news
+{
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+.fa_news span
+{
+  display: block;
+}
+
+#fa_footer i.fa-share
+{
+  font-size: 15px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+
+  border: 2.5px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%; 
+}
+
+#fa_footer .row 
+{
+  margin: 10px 0;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/**/
+.fa_news_date span:first-child
+{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1.0);
+}
+
+.fa_news_date span:last-child
+{
+  font-size: 14.5px;
+  position: relative;
+  margin-top: -3px;
+}
+
+.fa_n_desc
+{
+  font-size: 16px;
+}
+
+#fa_footer .row:first-child
+{
+  border-radius: 14px 14px 0 0;
+}
+
+#fa_footer .row:last-child
+{
+  border-radius: 0 0 14px 14px;
+}

@@ -1,0 +1,163 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="~{layout}">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Player Profile - UI Design</title>
+		<link href="css/bootstrap1.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container-fluid site-wrap" layout:fragment="body">
+
+        	<div id="flag_app" class="row">
+           
+
+
+				<section id="fa_body" class="col-12">
+
+					<div class="row">
+						<div class="col-12" id="fa_flag">
+							<div class="fa_team_flags">
+								<ul>
+									<li>
+										<img src="images/ju.png" alt="">
+									</li>
+									<li>
+										<img src="images/portugal.png" alt="">
+									</li>
+								</ul>
+							</div>
+							<div class="fa_player_name">
+								Ronaldo
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<section id="fa_body_2" class="col-12">
+					<div class="row fa_shirt">
+						<div class="col-12 text-left">
+							<img src="images/shirt.png" alt="">
+							FORWARD
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="fa_tile">
+								<div>
+									<span class="fa_tile_title text-left d-block">
+										Age
+									</span>
+									<span class="fa_tile_data text-right d-block">
+										33
+									</span>
+								</div>
+							</div><div class="fa_tile">
+								<div>
+									<span class="fa_tile_title text-left d-block">
+										Games
+									</span>
+									<span class="fa_tile_data text-right d-block">
+										14
+									</span>	
+								</div>
+							</div><div class="fa_tile">
+								<div>
+									<span class="fa_tile_title text-left d-block">
+										Goals
+									</span>
+									<span class="fa_tile_data text-right d-block">
+										10
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<section id="fa_body_3" class="col-12">
+					<div class="row">
+						<div class="col-12">
+							<div class="fa_b3_title d-inline-block">
+								<i class="fa fa-dot-circle-o"></i>
+								<span>Now discussing</span>
+							</div>
+							<ul id="fa_users" class="pull-right">
+								<li><img src="images/1.jpg" alt=""></li>
+								<li><img src="images/2.jpg" alt=""></li>
+								<li><img src="images/3.jpg" alt=""></li>
+								<li><img src="images/4.jpg" alt=""></li>
+								<li><img src="images/5.jpg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section id="fa_footer" class="col-12">
+					<div class="row">
+						<div class="col-3">
+							<ul id="fa_pt" class="pull-right">
+								<li><img src="images/ju.png" alt=""></li>
+								<li><img src="images/5.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="col-6 fa_news text-left">
+							<span class="fa_n_title">
+								Football news
+							</span>
+							<span class="fa_n_caption">
+								Man U, Ronaldo
+							</span>
+						</div>
+						<div class="col-3">
+							<i class="fa fa-share"></i>
+						</div>
+					</div>
+					<div class="row pt-3 pb-3">
+						<div class="col-1 text-center fa_news_date">
+							<span>22</span>
+							<span class="d-block">Oct</span>
+						</div>
+						<div class="col-10 fa_news text-left">
+							<span class="fa_n_desc pl-2">
+								Ronalod nomitec for UEFA Men's Player of the Year
+							</span>
+						</div>
+					</div>
+					<div class="row pt-3 pb-3">
+						<div class="col-1 text-center fa_news_date">
+							<span>05</span>
+							<span class="d-block">Aug</span>
+						</div>
+						<div class="col-10 fa_news text-left">
+							<span class="fa_n_desc pl-2">
+								Ronalod nomitec for UEFA Men's Player of the Match
+							</span>
+						</div>
+					</div>
+				</section>
+
+	        </div>
+
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+	    <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </body>
